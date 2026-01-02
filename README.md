@@ -6,47 +6,27 @@ ECE 310- Wireless Communication
 
 
 This repository contains code and a report for the SCM-GNN system, implementing a GNN pipeline for signal detection in wireless communication experiments. The files are organized as follows.
-
-
 * GNN_dataset_Group8.ipynb- Dataset and .dat file generator for SCM-GNN.
-
-
 * GNN_Patch_Group8.ipynb - Main SCM-GNN, PatchGNN, and PatchGNN+ model pipelines.
-
-
 * SCM-GNN Pipeline Code - SCM-GNN standalone pipeline script.
 
-
-1. GNN_dataset_Group8.ipynb (Dataset Generator)
-1. Functionality
+## GNN_dataset_Group8.ipynb (Dataset Generator)
+**Functionality**
 Generates the simulation-based .dat datasets to be used with model pipelines; signal and noise, antenna, QPSK modulation, SNR level, and pulse shaping parameters mirror the published paper settings.
-2. Requirements
+**Requirements**
 1. Python 3.x, Jupyter/Colab
 2. Required modules are Numpy, Scipy, torch , Os, Json ,matplotlib
 
 
-* Setup & Installation
-        Install libraries as follows (in a Jupyter/Colab cell):
-
-
-!pip install numpy scipy torch matplotlib
-* Running
+**Setup & Installation**
+      Install libraries as follows (in a Jupyter/Colab cell):
+!pip install numpy scipy torch matplotlib
+*Running*
 1. Open the notebook in Jupyter/Colab.
-
-
-2. Run each block in sequence to:
-
-
-3. Generate simulated multi-antenna IQ signals using the given parameters.
-
-
-4. Save generated datasets as .dat binary files.
-
-
-5. Visualize and verify sample waveforms to ensure proper signal generation.
-
-
-6. Download all generated files as a zip if running in Colab.
+2. Run each block in sequence to generate simulated multi-antenna IQ signals using the given parameters.
+3. Save generated datasets as .dat binary files.
+4. Visualize and verify sample waveforms to ensure proper signal generation.
+5. Download all generated files as a zip if running in Colab.
 
 
 Output files will be written into the current directory, or made available for download from Colab (e.g. Final-5dB.dat, etc.). 
